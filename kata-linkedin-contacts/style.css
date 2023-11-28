@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-color: snow;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.header button {
+  all: initial; /* default */
+  background-color: snow;
+  font-family: "Roboto", sans-serif;
+  margin-left: auto;
+  padding: 0.5rem;
+}
+
+main {
+  background-color: snow;
+  padding: 0.2rem;
+  border-radius: 20px;
+}
+
+.addPeople {
+  display: flex;
+
+  align-items: flex-start;
+}
+
+.addPeople button {
+  all: initial; /* default */
+  margin-left: auto;
+  padding: 0.2rem;
+  background-color: snow;
+  font-family: "Roboto", sans-serif;
+}
+
+#contacts {
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  gap: 0px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 10%;
+}
+
+li {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  margin: 0.5rem;
+  width: 330px;
+}
+
+.personContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: solid 0.1rem lightgray;
+  align-items: center;
+  background-color: snow;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  height: 500px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  top: 0;
+}
+
+.profile-img {
+  width: 60%;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  border: solid 5px white;
+}
+
+.contentContainer {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  height: 80%;
+  width: 80%;
+  z-index: 2;
+}
+
+.btnConnect {
+  font-size: 1.8rem;
+  min-height: 3.2rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  width: 80%;
+  background-color: snow;
+  border: 1.5px solid #0a66c2;
+  color: #0a66c2;
+  cursor: pointer;
+  transition: border-width 0.1s ease-in-out;
+}
+
+.btnConnect:hover {
+  border-width: 3px;
+  border-radius: 20px;
+}
+
+.personContainer p.personInfo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.personContainer p.position {
+  font-size: 20px;
+  color: #00000099;
+  padding: 0%;
+  margin: 0%;
+}
+
+.personContainer p.mutual-connections {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #00000099;
+}
+
+.personContainer p.mutual-connections::before {
+  content: "ބ";
+  margin-right: 5px;
+}
+
+.btnClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.904);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.btnClose:hover {
+  color: white;
+}
